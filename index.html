@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+<link rel="stylesheet" href="/assets/movo-forms.css">
 <head>
 <meta charset="UTF-8" />
 <meta name="color-scheme" content="only light" />
@@ -21,6 +22,7 @@
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto} .reveal{transition:none!important}}
+  <script src="/assets/movo-forms.js" defer></script>
   body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
   h1,h2,h3{color:var(--navy);line-height:1.14;letter-spacing:-.012em;margin:0}
   a{color:var(--teal-d)}
@@ -181,7 +183,7 @@
       <a href="#aanpak">Hoe het werkt</a>
       <a href="#programmas">Programma's</a>
       <a href="#rekensom">Rekensom</a>
-      <a href="#pilot" class="cta">Start de pilot</a>
+      <a href="#pilot" class="cta" data-movo-form="voorstel">Start de pilot</a>
     </nav>
   </div>
 </header>
@@ -258,7 +260,7 @@
           <li>Maandelijkse 1-op-1 telehealth met de fysiotherapeut</li>
           <li>Uitgebreid ROI- en verzuimrapport + bonusbeheer</li>
         </ul>
-        <a class="btn primary small" href="#pilot">Start de pilot met TRACK</a>
+        <a class="btn primary small" href="#pilot" data-movo-form="voorstel">Start de pilot met TRACK</a>
       </div>
       <div class="tier reveal">
         <h3>THRIVE</h3>
@@ -270,7 +272,7 @@
           <li>Prioritaire opvolging</li>
           <li>WHOOP-wearable optioneel; teambenchmarking</li>
         </ul>
-        <a class="btn ghost small" href="#pilot">Vraag een voorstel aan</a>
+        <a class="btn ghost small" href="#pilot" data-movo-form="voorstel">vraag een voorstel aan </a>
       </div>
     </div>
     <div class="callout reveal"><strong>Opstartkosten: €250 per deelnemer, eenmalig</strong> (intake + logistieke setup) — minder dan één verzuimdag van diezelfde medewerker. Facturatie per kwartaal vooraf. Apparatuur is een zuivere pass-through tegen kostprijs: geen verborgen marge op hardware.</div>
@@ -312,7 +314,7 @@
         <div class="row"><span>Besparing bij gekozen reductie</span><b id="save">—</b></div>
         <div class="row big"><span>Netto resultaat jaar 1</span><b id="net">—</b></div>
         <p class="note">Indicatieve berekening vóór WKR-optimalisatie en exclusief btw; het werkgeversdeel is binnen de vrije ruimte richting €0 netto te brengen. Break-even ligt doorgaans op één vermeden verzuimdag per deelnemer per half jaar.</p>
-        <div class="cta-row"><a class="btn primary small" href="#pilot">Bespreek deze cijfers met ons</a></div>
+        <div class="cta-row"><a class="btn primary small" href="#pilot" data-movo-form="cijfers">Bespreek deze cijfers met ons</a></div>
       </div>
     </div>
   </div>
@@ -363,7 +365,7 @@
           <li><b>Eerste klant</b> — 120 FTE, piloot actief</li>
         </ul>
       </div>
-      <div class="cta-row reveal"><a class="btn primary" href="#pilot">Plan een kennismaking</a></div>
+      <div class="cta-row reveal"><a class="btn primary" href="#pilot" data-movo-form="kennismaking">Plan een kennismaking</a></div>
     </div>
   </div>
 </section>
@@ -375,7 +377,7 @@
     <p>Start met een gecontroleerde pilot van 6 maanden — vanaf 20 deelnemers, kosteloos opzegbaar na evaluatie, prepaid per kwartaal. Wij brengen fysiotherapeut, app, rapportage en alle WKR- en loonruil-documentatie mee.</p>
     <div class="cta-row center">
       <a class="btn primary" href="mailto:info@movohealth.nl?subject=Pilot%20MOVO%20Health%20%E2%80%94%206%20maanden">Start de pilot van 6 maanden</a>
-      <a class="btn dark-ghost" href="mailto:info@movohealth.nl?subject=Kennismakingsgesprek%20MOVO%20Health">Of plan eerst 45 min kennismaking</a>
+      <a class="btn dark-ghost" href=#pilot class="btn" data-movo-form="kennismaking">Of plan eerst 45 min kennismaking</a>
     </div>
   </div>
 </section>
